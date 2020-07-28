@@ -1,0 +1,5 @@
+print("Enter the 2 numbers")
+a=int(input("input a:"))
+b=int(input("intput b:"))
+c=a+~b+1;
+print(a,"-",b,":",c);
