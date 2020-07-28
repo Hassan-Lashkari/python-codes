@@ -1,0 +1,21 @@
+from datetime import datetime
+lap=0
+i=int(input("enter 1 or 2 to start"))
+if(i==1):
+    start=datetime.now()
+    a=int(input("enter 1 to stop"))
+    if(a==1):
+        end=datetime.now()
+    res=end-start
+    print("lap=", res)
+if(i==2):
+    a=int(input("enter 1 to stop"))
+    if(a==1):
+        while(a!=0):
+            start=datetime.now()
+            a=int(input("enter 1 to continue or 0 to end"))
+            if(a==1):
+                end=datetime.now()
+                res=end-start
+                lap+=1
+                print("lap",lap,"=",res)
