@@ -1,0 +1,21 @@
+def bubbleSort(lst):
+    n = len(lst)
+    for i in range(0,n):
+        for j in range(0, n-i-1):
+          if lst[j]>lst[j+1]:
+            temp = lst[j]
+            lst[j] = lst[j+1]
+            lst[j+1] = temp
+
+
+
+lst = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+print ("array is:")
+print(lst)
+bubbleSort(lst)
+print ("Sorted array is:")
+print(lst)
