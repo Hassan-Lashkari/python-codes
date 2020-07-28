@@ -1,0 +1,6 @@
+string1 = input("Enter the value of string1: ")
+string2 = input("Enter the value of string2: ")
+if(string1==string2):
+    print("same")
+else:
+    print("not")
