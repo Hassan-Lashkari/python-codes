@@ -1,0 +1,29 @@
+print("Enter min sec mili 1")
+min1=int(input("Enter min: "))
+sec1=int(input("Enter sec: "))
+mili1=int(input("Enter mili: "))
+print("Enter min sec mili 2")
+min2=int(input("Enter min: "))
+sec2=int(input("Enter sec: "))
+mili2=int(input("Enter mili: "))
+print("Enter min sec mili 3")
+min3=int(input("Enter min: "))
+sec3=int(input("Enter sec: "))
+mili3=int(input("Enter mili: "))
+s1=print(min1,":",sec1,":",mili1)
+s2=print(min2,":",sec2,":",mili2)
+s3=print(min3,":",sec3,":",mili3)
+
+one=min1*60000+sec1*1000+mili1
+two=min2*60000+sec2*1000+mili2
+three=min3*60000+sec3*1000+mili3
+
+if (one < two and one < three):
+
+      print("Smallest lap is:",min1,":",sec1,":",mili1)
+
+elif (two < three):
+    print("Smallest lap is:",min2,":",sec2,":",mili2)
+
+else: print("Smallest lap is:",min3,":",sec3,":",mili3)
+
