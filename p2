@@ -1,0 +1,4 @@
+name=input("enter name:")
+section=int(input("enter sem:"))
+secl=input("enter section:")
+print(name,section,secl,sep=";")
